@@ -24,6 +24,7 @@ Rather than simply search for "http" it looks for TLDs and attempts to construct
 
 At some point I plan to tidy it up into a nice package with tests, commenting and a general better structure.
 
-:copyright: (c) 2012 by Imran Ghory
-:license: MIT Licene
+Copyrigh 2012 by Imran Ghory
+
+MIT license
 
