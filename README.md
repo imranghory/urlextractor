@@ -3,6 +3,9 @@ urlextractor v0.1
 
 Python URL Extractor - extract URLs from text
 
+Copyright 2012 by Imran Ghory
+Released under the MIT license
+
 *** Warning: This code works but is extremely hacky, patches welcome ***
 
 Extract a URL from free-form text
@@ -24,7 +27,4 @@ Rather than simply search for "http" it looks for TLDs and attempts to construct
 
 At some point I plan to tidy it up into a nice package with tests, commenting and a general better structure.
 
-Copyrigh 2012 by Imran Ghory
-
-MIT license
 
