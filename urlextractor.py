@@ -50,7 +50,6 @@ def extractUrl(text, match):
 			return None
 
 		posttld = re.match(':?[0-9]*[/[!#$&-;=?a-z]+]?', text[endpt:])
-
 	pretld = re.search('[a-z0-9-.]+?$', text[:startpt])
 
 	if pretld:
@@ -58,8 +57,12 @@ def extractUrl(text, match):
 		startpt -= len(pretld.group(0))
 	url += tld
 	if posttld:
-		url += posttld.group(0)
+		url += posttld.group(0)		
 		endpt += len(posttld.group(0))
+
+	# if it ends with a . or , strip it because it's probably unintentional
+	url = url.rstrip(",.") 
+
 	return (startpt, endpt), url
 
 def parseText(text):
